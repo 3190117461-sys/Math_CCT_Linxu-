@@ -22,6 +22,26 @@
       height: 100%;
       border: 1px solid #ccc;
     }
+    
+    /* Style for function equations */
+    .function-eq {
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold;
+      color: #333;
+      background-color: #f4f4f4;
+      padding: 5px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    
+    .domain-range {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #000;
+    }
+    
   </style>
 </head>
 
@@ -45,26 +65,28 @@
     <div class="w3-container w3-white w3-padding-32 w3-card w3-margin-bottom">
       <h3>Transformations</h3>
       <p>
-        The parent cubic function was transformed to model the motion of a roller coaster in Disney Park. 
-        The image shows a section of the ride’s track featuring an uphill followed by a steep downhill, 
-        representing the thrill and motion of the coaster. Because the leading coefficient is negative, 
-        the graph opens downward, symbolizing the initial drop after the peak.
+        <span class="function-eq">Parent Function: f(x) = x³</span><br>
+        <span class="function-eq">Transformed Function: g(x) = -0.158[ (1/1.672)(x + 0.89) ]³ + 0.47</span>
       </p>
       <p>
-        It was vertically compressed by a factor of 0.158, reducing the steepness of the curve to reflect 
-        the gentler slope visible in the real track. A horizontal stretch by a factor of 1.672 widens the curve, 
+        The parent cubic function was transformed to model the motion of a roller coaster. 
+        Because the leading coefficient (a = -0.158) is negative, the graph is reflected vertically, 
+        symbolizing the initial drop after the peak.
+      </p>
+      <p>
+        It was vertically compressed by a factor of 0.158, reducing the steepness. A horizontal stretch by a factor of 1.672 (k = 1/1.672) widens the curve, 
         matching the long, smooth transition of the coaster’s motion. The function was also translated 0.89 units 
-        to the left and 0.47 units upward, aligning its lowest point with the coaster’s base level and starting 
-        platform shown in the image. Together, these transformations allow the cubic function to realistically represent the roller coaster’s shape and movement.
+        to the left (d = -0.89) and 0.47 units upward (c = 0.47), which sets the inflection point of the curve.
       </p>
     </div>
     <div class="w3-container w3-white w3-padding-32 w3-card">
       <h3>Domain and Range</h3>
       <p>
-        The domain of this polynomial function is approximately −6 &lt; x &lt; −1.7, representing the section of the 
-        roller coaster track shown in the image — from the point where the train begins to climb the hill to where 
-        it finishes descending. The range corresponds to the height of the roller coaster in this portion of the 
-        track, showing how the coaster rises to its highest point and then drops back down.
+        For the section of the track shown in the graph, the domain and range are restricted:
+      </p>
+      <p class="domain-range">
+        Domain: { x ∈ ℝ | -6 ≤ x ≤ -1.7 }<br>
+        Range: { y ∈ ℝ | 0.5 ≤ y ≤ 5.0 }
       </p>
     </div>
   </section>
@@ -82,26 +104,27 @@
     <div class="w3-container w3-white w3-padding-32 w3-card w3-margin-bottom">
       <h3>Transformations</h3>
       <p>
-        The parent absolute value function was transformed to model the support frame of the pirate ship ride, 
-        whose structure forms a tall, symmetrical “V” shape supporting the swinging motion of the ship. 
-        The graph is reflected vertically because the leading coefficient is negative (a = -1.3), flipping 
-        the parent function downward to resemble the point where the two beams meet at the base of the frame.
+        <span class="function-eq">Parent Function: f(x) = |x|</span><br>
+        <span class="function-eq">Transformed Function: g(x) = -1.3|x - 1| + 3.3</span>
       </p>
       <p>
-        It is vertically stretched by a factor of 1.3, making the “V” shape steeper and more representative 
-        of the long, angled metal beams that rise from the ground to hold the ship. The graph is then 
-        translated 1 unit to the right, positioning the vertex directly beneath the central pivot of the ride, 
-        and shifted 3.3 units upward so the lowest point sits above ground level, consistent with the actual structure.
+        The parent absolute value function models the "V" shape of the pirate ship's support frame. 
+        The graph is reflected vertically (a = -1.3) to open downward, representing the two beams meeting at the base.
       </p>
       <p>
-        Together, these transformations allow the absolute value function to accurately model the geometric symmetry, slope, and position of the pirate ship’s support frame in real life.
+        It is vertically stretched by a factor of 1.3, making the “V” shape steeper to match the angled beams. 
+        The graph is then translated 1 unit to the right (d = 1), positioning the vertex at the structure's center, 
+        and shifted 3.3 units upward (c = 3.3) to set the vertex's height.
       </p>
     </div>
     <div class="w3-container w3-white w3-padding-32 w3-card">
       <h3>Domain and Range</h3>
       <p>
-        The domain of this function is −4 &lt; x &lt; 5, representing the horizontal span of the two supporting 
-        beams. The range is limited to −3.2 ≤ y ≤ 3.3, representing the vertical positions of the frame.
+        The physical constraints of the support beams define the restricted domain and range:
+      </p>
+       <p class="domain-range">
+        Domain: { x ∈ ℝ | -4 ≤ x ≤ 5 }<br>
+        Range: { y ∈ ℝ | -3.2 ≤ y ≤ 3.3 }
       </p>
     </div>
   </section>
@@ -119,17 +142,29 @@
     <div class="w3-container w3-white w3-padding-32 w3-card w3-margin-bottom">
       <h3>Transformations</h3>
       <p>
-        The parent sine function was transformed to model the top section of a roller coaster track, where the curve reaches its highest peak before descending. The graph is vertically stretched by a factor of 1.5, making the wave taller and emphasizing the rise and fall of the coaster’s motion. It is also horizontally stretched by a factor of about 2.22 (k = 0.45), which lengthens the curve to match the wider, gentler slope of the coaster’s upper track.
+        <span class="function-eq">Parent Function: f(x) = sin(x)</span><br>
+        <span class="function-eq">Transformed Function: g(x) = 1.5sin(0.45(x + 2.8)) - 0.5</span>
       </p>
       <p>
-        The function is shifted 2.8 units to the left, aligning the highest point near the center of the structure, and moved downward by 0.5 units so that the peak remains within a realistic height range for the model. Together, these transformations create a smooth, elevated sine wave that represents the top arc of the roller coaster.
+        The parent sine function models the periodic wave of the track's hills. 
+        It is vertically stretched by a factor of 1.5 (a = 1.5), creating the amplitude of the hill. 
+        It is also horizontally stretched by a factor of about 2.22 (k = 0.45), which lengthens the curve.
+      </p>
+      <p>
+        The function is phase-shifted 2.8 units to the left (d = -2.8) and translated 0.5 units downward (c = -0.5), 
+        which establishes the axis of the wave at y = -0.5.
       </p>
     </div>
     <div class="w3-container w3-white w3-padding-32 w3-card">
       <h3>Domain and Range</h3>
       <p>
-        The domain of this function is -5 &lt; x &lt; 5, representing the horizontal distance covered by the top portion of the roller coaster track. The range is limited to -5 ≤ y ≤ 1, which corresponds to the vertical height of the coaster’s upper path.
+        While the function is periodic, the domain is restricted to the section of the track shown. The range is determined by the amplitude and vertical shift.
       </p>
+       <p class="domain-range">
+        Domain: { x ∈ ℝ | -5 ≤ x ≤ 5 }<br>
+        Range: { y ∈ ℝ | -2 ≤ y ≤ 1 }
+      </p>
+      <p>(Range is calculated from: Max = c + a = -0.5 + 1.5 = 1. Min = c - a = -0.5 - 1.5 = -2.)</p>
     </div>
   </section>
 
@@ -146,16 +181,27 @@
     <div class="w3-container w3-white w3-padding-32 w3-card w3-margin-bottom">
       <h3>Transformations</h3>
       <p>
-        The parent exponential function f(x) = 2^x was transformed to model a section of a roller coaster track, showing a gradual rise or fall along the ride. The graph is vertically reflected and compressed by a factor of 0.2 (a = -0.2), which flips the curve downward and reduces its steepness to match the physical slope of the track.
+        <span class="function-eq">Parent Function: f(x) = 2ˣ</span><br>
+        <span class="function-eq">Transformed Function: g(x) = -0.2 • 2⁰.³(ˣ + ¹⁸.¹) + 6.9</span>
       </p>
       <p>
-        A horizontal stretch by a factor of approximately 3.33 (k = 0.3) widens the curve, elongating the rise or drop to represent the smoother motion of the coaster. The graph is shifted 18.1 units to the left (d = -18.1) and translated upward by 6.9 units (c = 6.9) so that the track sits at the correct vertical height. Together, these transformations create an exponential curve that realistically models the shape and slope of this portion of the roller coaster.
+        The parent exponential function $f(x) = 2^x$ was transformed. The graph is vertically reflected (a = -0.2) 
+        and compressed by a factor of 0.2, which flips the curve downward to model the drop.
+      </p>
+      <p>
+        A horizontal stretch by a factor of approximately 3.33 (k = 0.3) widens the curve. 
+        The graph is shifted 18.1 units to the left (d = -18.1) and translated 6.9 units upward (c = 6.9) 
+        to position the curve and its horizontal asymptote (y = 6.9).
       </p>
     </div>
     <div class="w3-container w3-white w3-padding-32 w3-card">
       <h3>Domain and Range</h3>
       <p>
-        The domain is -2 &lt; x &lt; 0.8, representing the horizontal extent of this section of the roller coaster track. The range is approximately -3.24 ≤ y ≤ 1.24, corresponding to the vertical positions along this segment.
+        The domain and range for this specific piece of the track are:
+      </p>
+       <p class="domain-range">
+        Domain: { x ∈ ℝ | -2 ≤ x ≤ 0.8 }<br>
+        Range: { y ∈ ℝ | -3.24 ≤ y ≤ 1.24 }
       </p>
     </div>
   </section>
@@ -172,23 +218,35 @@
     </div>
     <div class="w3-container w3-white w3-padding-32 w3-card w3-margin-bottom">
       <h3>Transformations</h3>
-      <p>
-        The parent square root function f(x) = √x was transformed to model the descending section of the roller coaster track, where the ride slopes downward from a higher point. The graph is vertically stretched by a factor of 2.3, making the descent steeper to match the physical slope of the track. The negative horizontal factor (-1.3) reflects the graph across the vertical axis and compresses it horizontally, reversing the direction so that the slope goes downward.
+       <p>
+        <span class="function-eq">Parent Function: f(x) = √x</span><br>
+        <span class="function-eq">Transformed Function: g(x) = 2.3√(-1.3(x - 5.2)) - 6.3</span>
       </p>
       <p>
-        The function is shifted horizontally by 5.2 units to align the start of the descent with the correct position along the track, and vertically translated downward by 6.3 units, setting the height of the track relative to the base level. These transformations together produce a realistic curve representing the slanted, downward portion of the roller coaster.
-      </cmset_of_all_ad_response_tokens>
+        The parent square root function $f(x) = \sqrt{x}$ models the descending curve. 
+        It is vertically stretched by a factor of 2.3 (a = 2.3), making the descent steeper.
+      </p>
+      <p>
+        The negative horizontal factor (k = -1.3) reflects the graph across the y-axis and compresses it horizontally, 
+        making the function decrease from right to left. 
+        The function is shifted 5.2 units to the right (d = 5.2) and 6.3 units downward (c = -6.3) 
+        to set the starting point of the curve at (5.2, -6.3).
+      </p>
     </div>
     <div class="w3-container w3-white w3-padding-32 w3-card">
       <h3>Domain and Range</h3>
       <p>
-        The domain of this function is -5 &lt; x &lt; 4.2, representing the horizontal span of the descending section of the roller coaster track. The range is limited to approximately –3.678 ≤ y ≤ 2.077, corresponding to the vertical heights along this segment from the top of the descent down to the lowest point. This restricted domain and range ensure that the square root function accurately models the physical portion of the ride rather than extending infinitely.
+        The restricted domain and range for this section of the track are:
+      </p>
+       <p class="domain-range">
+        Domain: { x ∈ ℝ | -5 ≤ x ≤ 4.2 }<br>
+        Range: { y ∈ ℝ | -3.68 ≤ y ≤ 2.08 }
       </p>
     </div>
   </section>
 
   <footer class="w3-center w3-indigo w3-padding-16 w3-margin-top">
-    <p class="w3-text-white">© 2025 Functions at Sunway Lagoon | Mathematics in Motion</p>
+    <p class="w3-text-white">© 2025 Functions at amusement parks | Mathematics in Motion</p>
   </footer>
 
 </body>
