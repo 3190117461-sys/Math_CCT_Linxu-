@@ -55,34 +55,39 @@
 
   <section class="w3-container w3-margin-top">
     <header class="w3-container w3-center w3-blue w3-padding-16 w3-card">
-      <h2 class="w3-xxlarge w3-text-white">Roller Coaster Function</h2>
+      <h2 class="w3-xxxlarge w3-text-white">Roller Coaster Function</h2>
       <h4 class="w3-text-light-grey">Cubic Function</h4>
     </header>
     <div class="w3-container w3-padding-32">
       <div class="responsive-iframe w3-card w3-white">
+      
         <iframe src="https://www.desmos.com/calculator/0wi84aonbg?embed" frameborder="0" title="Cubic Function Graph"></iframe>
       </div>
     </div>
+    
     <div class="w3-container w3-white w3-padding-32 w3-card w3-margin-bottom">
-      
       <h3>Transformations</h3>
       <p>
-        <span class="function-eq">Complex Shape: f(x) = x³ + x² - 7x</span><br>
-        <span class="function-eq">Modeling Function: g(x) = -0.158[ 0.598(x + 0.89) ]³ + 0.47</span>
+        <span class="function-eq">Parent Function: f(x) = x³ + x² - 7x</span><br>
+        <span class="function-eq">Transformed: g(x) = 0.158 * f( 0.598(x + 0.89) ) + 0.47</span>
+      </p>
+      <p style="font-family: 'Courier New', Courier, monospace; font-size: 0.9em; word-wrap: break-word;">
+        Full g(x) = 0.158 • ( [0.598(x+0.89)]³ + [0.598(x+0.89)]² - 7[0.598(x+0.89)] ) + 0.47
+      </p>
+      
+      <p>
+        The parent cubic function, <b>$f(x) = x^3 + x^2 - 7x$</b>, was transformed to model the motion of a roller coaster in Disney Park. The image shows a section of the ride’s track featuring an uphill followed by a steep downhill, representing the thrill and motion of the coaster.
       </p>
       <p>
-        The parent cubic function, $f(x) = x^3$, was transformed to **model** the motion of a roller coaster in Disney Park. The actual path of a coaster might be described by a more complex polynomial, such as $f(x) = x^3 + x^2 - 7x$, but a transformed simple cubic provides an excellent approximation.
+        This specific parent function was chosen precisely because its natural shape already includes this "uphill-then-downhill" curve. The transformations were then applied to scale and position this shape onto the real track.
       </p>
       <p>
-        The image shows a section of the ride’s track featuring an uphill followed by a steep downhill, representing the thrill and motion of the coaster. To model this, the basic $f(x) = x^3$ was transformed into $g(x)$.
+        It was <b>vertically compressed by a factor of 0.158 (a = 0.158)</b>. This positive 'a' value reduces the steepness of the parent function's curve to reflect the gentler slope visible in the real track. A <b>horizontal stretch</b> by a factor of 1.672 (k ≈ 0.598) widens the curve, matching the long, smooth transition.
       </p>
       <p>
-        Because the leading coefficient in our model is negative (a = -0.158), the graph is **reflected vertically** and **compressed**, reducing the steepness to reflect the gentler slope visible in the real track. This symbolizes the initial drop after the peak.
+        Finally, the function was <b>translated 0.89 units to the left</b> (d = -0.89) and <b>0.47 units upward</b> (c = 0.47), aligning the function's peak with the coaster’s base level. Together, these transformations allow the cubic function to realistically represent the roller coaster’s shape.
       </p>
-      <p>
-        A **horizontal stretch** by a factor of 1.672 (k ≈ 0.598) widens the curve, matching the long, smooth transition of the coaster’s motion. The function was also **translated** 0.89 units to the left (d = -0.89) and 0.47 units upward (c = 0.47), aligning its central inflection point with the coaster’s base level. Together, these transformations allow our simple cubic model to realistically represent the roller coaster’s shape.
-      </p>
-      </div>
+    </div>
     <div class="w3-container w3-white w3-padding-32 w3-card">
       <h3>Domain and Range</h3>
       <p>
